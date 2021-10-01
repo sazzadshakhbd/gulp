@@ -1,0 +1,20 @@
+{
+  "name": "gulpboylerplate",
+  "version": "1.0.0",
+  "description": "Html BoilerPlate with Sass, Bootstrap 4, Gulp",
+  "author": "Md Sazzad Ali Shakh",
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp serve"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-partial": "^1.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
