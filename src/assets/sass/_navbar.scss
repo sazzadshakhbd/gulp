@@ -1,0 +1,53 @@
+nav {
+ &.navbar {
+   padding: 3.5rem 0 0 0;
+   @media(max-width: 767px){
+     padding: 0.938rem 0 0 0;
+   }
+  .navbar-brand {
+    font-size: inherit;
+    img {
+      @media(max-width: 767px){
+        max-width: 150px;
+      }
+    }
+  }
+  button {
+    &.navbar-toggler{
+      span {
+        &.navbar-toggler-icon {
+          height: 5px;
+        }
+      }
+    }
+  }
+  .navbar-collapse {
+    ul {
+      &.top-nav {
+        li {
+          &:first-child {
+            padding-right: 2.313rem;
+          }
+          &.nav-item {
+            span{
+              color: $text-gray-500;
+            }
+            a {
+              color: $secondary;
+            }
+          }
+        }
+      }
+      &.main-nav {
+        li {
+          a {
+            color: $primary;
+            padding-left: 2rem;
+            font-weight:900;
+          }
+        }
+      }
+    }
+  }
+ }
+}

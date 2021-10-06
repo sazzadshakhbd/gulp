@@ -1,0 +1,20 @@
+.border-space {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  hr {
+    border-width: 2px;
+    border-color: #F0C331;
+  }
+}
+.border-bottom-space {
+  background-image: url(../../assets/img/bg_plus_grey.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 12%;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  hr {
+    border-width: 8px;
+    border-color: $secondary;
+  }
+}
