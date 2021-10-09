@@ -1,34 +1,76 @@
-<div class="blog-slider">
-  <div class="container-fluid spacing-left spacing-right">
+<div class="blog-slider" id="scrollBlog">
+  <div class="container-fluid">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <div class="indicator-bg">
-        <ol class="carousel-indicators">
+      <div class="indicator-bg wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+        <ol class="carousel-indicators horizontal-icon">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators plus-icon">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="p-5 title-section">
+      <div class="carousel-inner wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="carousel-item active" data-interval="2000">
+          <div class="row align-items-center">
+            <div class="order-last col-xl-4 col-lg-5 order-md-last order-lg-first order-sm-last">
+              <div class="title-section">
                 <h3>Latest from
                   the Blog</h3>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
-                <a class="d-inline-block text-uppercase default-btn">visit the blog</a>
+                <a href="#">visit the blog</a>
               </div>
             </div>
-            <div class="col-md-8">
-              <div class="p-5 slider-content">
-                <img src="../../assets/img/slider_01.svg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>The Title of a Blog Post
+            <div class="order-first col-xl-8 col-lg-7 order-md-first order-lg-last order-sm-first">
+              <div class="slider-content">
+                <img src="../../assets/img/slider_01.svg" class="d-block w-100" alt="slider_img_laptop">
+                <div class="carousel-caption d-none d-xl-block">
+                  <h3 class="font-weight-900">The Title of a Blog Post
+                    Would Go Right Here</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="3000">
+          <div class="row align-items-center">
+            <div class="order-last col-xl-4 col-lg-5 order-md-last order-lg-first order-sm-last">
+              <div class="title-section">
+                <h3>Latest from
+                  the Blog</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
+                <a href="#">visit the blog</a>
+              </div>
+            </div>
+            <div class="order-first col-xl-8 col-lg-7 order-md-first order-lg-last order-sm-first">
+              <div class="slider-content">
+                <img src="../../assets/img/slider_01.svg" class="d-block w-100" alt="slider_img_laptop">
+                <div class="carousel-caption d-none d-xl-block">
+                  <h3 class="font-weight-900">The Title of a Blog Post
+                    Would Go Right Here</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="4000">
+          <div class="row align-items-center">
+            <div class="order-last col-xl-4 col-lg-5 order-md-last order-lg-first order-sm-last">
+              <div class="title-section">
+                <h3>Latest from
+                  the Blog</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
+                <a href="#">visit the blog</a>
+              </div>
+            </div>
+            <div class="order-first col-xl-8 col-lg-7 order-md-first order-lg-last order-sm-first">
+              <div class="slider-content">
+                <img src="../../assets/img/slider_01.svg" class="d-block w-100" alt="slider_img_laptop">
+                <div class="carousel-caption d-none d-xl-block">
+                  <h3 class="font-weight-900">The Title of a Blog Post
                     Would Go Right Here</h3>
                 </div>
               </div>
@@ -36,16 +78,25 @@
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span> -->
+      <a class="carousel-control-prev wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s"
+        href="#carouselExampleCaptions" role="button" data-slide="prev">
         <span><img src="../../assets/img/arrow_left.svg" alt="previous"></span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span> -->
+      <a class="carousel-control-next wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.7s"
+        href="#carouselExampleCaptions" role="button" data-slide="next">
         <span><img src="../../assets/img/arrow_right.svg" alt="next"></span>
       </a>
+      <div class="carousel-bg-bottom wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.9s">
+        <div class="row">
+          <div class="col-md-5 offset-md-4">
+            <div class="card">
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

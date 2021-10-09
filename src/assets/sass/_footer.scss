@@ -1,3 +1,36 @@
 .footer {
   background-color: $primary;
+  min-height: 460px;
+  width: 100%;
+  img {
+    display: inline-block;
+    margin-top: 112px;
+    margin-bottom: 37px;
+  }
+  ul {
+    @include media-breakpoint-down(xs) {
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      margin-left:55px;
+      @include media-breakpoint-down(xs) {
+        line-height: 2.2rem;
+      }
+      @include media-breakpoint-down(md) {
+        margin-left: 30px;
+      }
+      @include media-breakpoint-down(md) {
+        margin-left: 10px;
+      }
+      a {
+        @include media-breakpoint-down(md) {
+          font-size: 18.4px;
+        }
+      }
+    }
+  }
+  p {
+    margin-top: 60px;
+  }
 }

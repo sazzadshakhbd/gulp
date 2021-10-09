@@ -1,6 +1,60 @@
 .team {
-  margin-top: -100px;
+  margin-top: -150px;
+  @include spacing;
   .team-wrapper {
     background: $secondary;
+    .team-img {
+      padding-left: 45px;
+      @include media-breakpoint-down(sm) {
+        padding-left: 15px;
+      }
+      @include media-breakpoint-down(xs) {
+        padding: 15px;
+      }
+    }
+    .title-section {
+      padding-top: 70px;
+      padding-bottom: 76px;
+      padding-left: 43px;
+      @include media-breakpoint-down(sm) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        padding-left: 0;
+      }
+      @include media-breakpoint-down(xs) {
+        padding: 15px;
+      }
+      h3 {
+        @include title-heading;
+      }
+      p {
+        margin-bottom: 20px;
+        @include title-para;
+        @include media-breakpoint-down(lg) {
+          padding-right: 3rem;
+        }
+        @include media-breakpoint-down(sm) {
+          padding-right: 10px;
+        }
+      }
+      a {
+        border-color: $primary;
+        min-width: 246px;
+        height: 80px;
+        @include theme-btn;
+        background-color: transparent;
+        border-color: $primary;
+        line-height: 5px;
+        &::before {
+          background: $primary;
+        }
+        &:hover {
+          background-color: $primary !important;
+        }
+        @include media-breakpoint-down(md){
+          line-height: 25px;
+        }
+      }
+    }
   }
 }

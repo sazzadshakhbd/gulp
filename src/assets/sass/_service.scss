@@ -1,9 +1,22 @@
 .service {
   background-image: url(../../assets/img/bg_cross.svg);
-  background-repeat: no-repeat;
-  background-position: -4% 0%;
-  background-size: 15%;
-  padding-top: 2rem;
+  @include background-repeat;
+  background-position: -11% 0;
+  @include spacing;
+  .title-section {
+    margin-top: 140px;
+    margin-bottom: 45px;
+    @include media-breakpoint-down(lg) {
+      margin-top:0;
+    }
+    h3 {
+      @include title-heading;
+    }
+    p {
+      margin-bottom: 0;
+      @include title-para;
+    }
+  }
   .card {
     border: 8px solid #F8F8F8;
     margin-bottom: 1.25rem;
@@ -18,11 +31,39 @@
         line-height: 2.875rem;
         color: $primary;
         font-weight: 900;
+        @media (min-width: 1350px) and (max-width: 1599.98px) { 
+          font-size: 2rem;
+        }
+        @media (min-width: 1200px) and (max-width: 1349.98px) { 
+          font-size: 1.6rem;
+          line-height: 2.3rem;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 2.5rem;
+          line-height: 3rem;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 30px;
+          line-height: 36px;
+        }
+        @include media-breakpoint-down(xs) {
+          font-size: 27px;
+        }
       }
       a {
+        @include theme-btn;
         min-width: 214px;
         height: 74px;
-        line-height: 1.313rem;
+        line-height: 0;
+        background-color: transparent;
+        @media (min-width: 1200px) and (max-width: 1349.98px) {
+          padding: 30px 30px 23px;
+        }
+        @include media-breakpoint-down(md) {
+          line-height:1.7rem;
+          min-width: 160px;
+          height: 70px;
+        }
       }
     }
   }

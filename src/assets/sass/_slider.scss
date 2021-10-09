@@ -1,7 +1,221 @@
 .blog-slider {
   background-image: url(../../assets/img/bg_cross.svg);
-  background-repeat: no-repeat;
-  background-position: 38% 0;
-  background-size: 12%;
-  padding-top: 2rem;
+  @include background-repeat;
+  background-position: 40% -43px;
+  padding-top: 177px;
+  background-size: 20%;
+  @include spacing;
+  @include media-breakpoint-down(sm) {
+    background-position: -22% -35px;
+    padding-top: 77px;
+    background-size: 50%;
+  }
+  @include media-breakpoint-down(xs) {
+    padding-bottom: 50px;
+  }
+  .indicator-bg {
+    ol {
+      &.horizontal-icon {
+        right: 60px;
+        bottom: 30px;
+        @include media-breakpoint-down(lg) {
+          right: 0;
+          bottom: 0;
+        }
+        li {
+          margin: 0;
+          width: 87px;
+          height: 6px;
+          background-color: $primary;
+          opacity: 1;
+          @include media-breakpoint-down(lg) {
+            width: 50px;
+          }
+          &.active {
+            opacity: 1;
+            background-color: $secondary;
+          }
+        }
+      }
+      &.plus-icon {
+        left: 25%;
+        bottom: 30px;
+        @media (min-width: 1200px) and (max-width: 1599.98px) {
+          left: 35%;
+        }
+        @include media-breakpoint-down(lg) {
+          left: 35%;
+          bottom: 0;
+        }
+        @include media-breakpoint-down(sm) {
+          left: 50%;
+        }
+        li {
+          position: relative;
+          width: 18px;
+          height: 6px;
+          background-color: $primary;
+          opacity: 1;
+          &::before {
+            height: 18px;
+            position: absolute;
+            content: "";
+            background: $primary;
+            top: -6px;
+            left: 6px;
+            width: 5px;
+          }
+          &.active {
+            opacity: 1;
+            background-color: $secondary;
+            &::before {
+              background: $secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+  .carousel-inner {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 35px;
+    }
+    .carousel-item {
+      .title-section {
+        margin-bottom: 0;
+        padding-left: 140px;
+        @include media-breakpoint-down(lg){
+          padding-left: 100px;
+        }
+        @include media-breakpoint-down(md) {
+          padding-left: 0
+        }
+        @include media-breakpoint-down(sm) {
+          padding-top: 1rem;
+        }
+        h3 {
+          @include title-heading;
+          @media (min-width: 1350px) and (max-width: 1599.98px) {
+            font-size: 34px;
+            line-height: 38px;
+          }
+          @media (min-width: 1200px) and (max-width: 1349.98px) {
+            font-size: 25px;
+            line-height: 30px;
+          }
+          @include media-breakpoint-down(lg) {
+            font-size: 40px;
+            line-height: 50px;
+          }
+          @include media-breakpoint-down(sm){
+            font-size: 32px;
+            line-height: 36px;
+          }
+        }
+        p{
+          margin-bottom: 20px;
+          @include title-para;
+          @media (min-width: 1350px) and (max-width: 1599.98px) {
+            line-height: 28px;
+            font-size: 18px;
+          }
+          @media (min-width: 1200px) and (max-width: 1349.98px) {
+            line-height: 22px;
+            font-size: 16px;
+          }
+        }
+        a {
+          min-width: 239px;
+          height: 74px;
+          line-height: 0;
+          @include theme-btn;
+          @media (min-width: 1350px) and (max-width: 1599.98px) {
+            padding: 15px 15px 15px;
+            min-width: 90px;
+            height: 50px;
+            font-size: 16px;
+            line-height: 6px;
+          }
+          @media (min-width: 1200px) and (max-width: 1349.98px) {
+            padding: 7px;
+            min-width: 90px;
+            height: 50px;
+            font-size: 14px;
+            line-height: 25px;
+          }
+          @include media-breakpoint-down(md) {
+            line-height: 25px;
+          }
+        }
+      }
+      .slider-content {
+        padding-left: 50px;
+        padding-right: 135px;
+        @media (min-width: 1200px) and (max-width: 1599.98px) {
+          padding-left: 0;
+        }
+        @include media-breakpoint-down(md) {
+          padding: 0;
+        }
+        img {
+
+        }
+        .carousel-caption {
+          position: absolute;
+          right: 50%;
+          bottom: 20px;
+          left: 13%;
+          z-index: 10;
+          padding-top: 0;
+          padding-bottom: 0;
+          color: $white;
+          text-align: left;
+          h3 {
+            @media (min-width: 1200px) and (max-width: 1599.98px) {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .carousel-control-prev {
+    width:120px;
+    border: 8px solid #f8f8f8;
+    opacity: 1;
+    @include media-breakpoint-down(lg){
+      width: 60px;
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  .carousel-control-next {
+    width:120px;
+    border: 8px solid #f8f8f8;
+    opacity: 1;
+    @include media-breakpoint-down(lg){
+      width: 60px;
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  .carousel-bg-bottom {
+    .card {
+      height: 100px;
+      background: #F8F9FA;
+      border: 0;
+      border-radius: 0;
+      position: relative;
+      z-index: -1;
+      margin-top: -10px;
+      margin-left: 8rem;
+      @include media-breakpoint-down(lg) {
+        height: 50px;
+        background: transparent;
+        margin-left: 0rem;
+      }
+    }
+  }
 }

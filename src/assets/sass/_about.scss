@@ -1,30 +1,70 @@
 .about {
   &.bg-wpoo {
+    @include background-repeat;
     background-image: url(../../assets/img/bg_wpoo.svg);
-    background-repeat: no-repeat;
-    background-position: 13rem;
-    background-size: cover;
-    padding-top: 8rem;
-    margin-top: 1.875rem;
-    margin-bottom: 3.813rem;
+    background-position: 16rem -7rem;
+    background-size: 139%;
+    margin-bottom: 80px;
+    margin-top: 128px;
+    @include spacing;
+    @include media-breakpoint-down(lg) {
+      background-position: 4rem -3rem;
+      margin-top: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      background-size: 150%;
+      background-position: 4rem 7rem;
+      margin-bottom: 50px;
+    }
     .about-content {
-      top: 1.375rem;
+      padding-top: 35px;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 35px;
+      }
       h1 {
         line-height: 2.5rem;
         color: $secondary;
         font-size: 1.875rem;
-        word-spacing: 0.17rem;
+        @include media-breakpoint-down(lg) {
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+        }
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 10px !important;
+        }
       }
       p {
         font-size: 4.5rem;
-        font-weight: 900;
         color: $primary;
         line-height: 5.5rem;
+        margin-bottom: 30px;
+        @media (min-width: 1200px) and (max-width: 1599.98px) { 
+          font-size: 3.5rem;
+          line-height: 4.5rem;
+        }
+        @media (min-width: 1200px) and (max-width: 1349.98px) {
+          font-size: 2.5rem;
+          line-height: 3rem;
+        }
+        @include media-breakpoint-down(lg) {
+          font-size: 2.5rem;
+          line-height:3rem;
+        }
+        @include media-breakpoint-down(xs) {
+          font-size: 2rem;
+          line-height:2.5rem;
+        }
       }
-    }
-    .about-img {
-      top: -2.25rem;
-      left: 3.438rem;
+      a {
+        @include theme-btn;
+        min-width: 245px;
+        height: 84px;
+        line-height: 8px;
+        background: transparent;
+        @include media-breakpoint-down(md) {
+          line-height: 25px;
+        }
+      }
     }
   }
 }
