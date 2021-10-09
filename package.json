@@ -1,7 +1,7 @@
 {
-  "name": "gulpboylerplate",
+  "name": "WPPool",
   "version": "1.0.0",
-  "description": "Html BoilerPlate with Sass, Bootstrap 4, Gulp",
+  "description": "Html5, CSS3, JavaScript, Jquery, Sass, Bootstrap 4, Gulp",
   "author": "Md Sazzad Ali Shakh",
   "scripts": {
     "build": "gulp",
